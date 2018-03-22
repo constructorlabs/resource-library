@@ -5,7 +5,18 @@ class Input extends React.Component{
   render(){
     return (
       <div>
-        <form className='bookmark-input-form'>
+        <form
+          className='bookmark-input-form'
+          onSubmit={(event) => {
+            event.preventDefault();
+            console.log('props ', this.props);
+            return this.props.submitBookmark(
+              this.props.title,
+              this.props.description,
+              this.props.url,
+              this.props.tags
+            );
+          }}>
           <label>
             Title
             <input
@@ -58,7 +69,10 @@ class Input extends React.Component{
               }}/>
           </label>
           <br />
-          <button className='submit-btn' type='submit'>Save to bookmarks</button>
+          <button
+            className='submit-btn'
+            type='submit'
+            >Save to bookmarks</button>
         </form>
       </div>
     );
