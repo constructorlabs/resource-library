@@ -1,3 +1,6 @@
 import { combineReducers } from 'redux';
+import input from './input';
 
-export default combineReducers({});
+export default combineReducers({
+  input
+});
