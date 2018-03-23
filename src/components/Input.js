@@ -87,6 +87,6 @@ Input.propTypes = {
   tags: PropTypes.string,
   updateInput : PropTypes.func,
   submitBookmark: PropTypes.func
-}
+};
 
 export default Input;

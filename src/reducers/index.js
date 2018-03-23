@@ -1,8 +1,6 @@
 import { combineReducers } from 'redux';
-import input from './input';
-import submitBookmark from './submitBookmark';
+import inputComponentFunctionality from './inputComponentFunctionality';
 
 export default combineReducers({
-  input,
-  bookmarks: submitBookmark,
+  inputComponent : inputComponentFunctionality
 });

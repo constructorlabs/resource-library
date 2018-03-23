@@ -3,7 +3,7 @@ import {updateInput, submitBookmark} from '../actions';
 import Input from '../components/Input';
 
 const getInput = (state) => {
-  return state.input;
+  return state.inputComponent;
 };
 
 const mapStateToProps = function(state){
@@ -11,10 +11,10 @@ const mapStateToProps = function(state){
 };
 
 // const clearInput = function(state){
-//   state.name = '',
-//   state.description = '',
-//   state.url = '',
-//   state.tags = ''
+//   state.input.name = '',
+//   state.input.description = '',
+//   state.input.url = '',
+//   state.input.tags = ''
 // }
 
 const mapDispatchToProps = dispatch => ({
