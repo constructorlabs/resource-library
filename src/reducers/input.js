@@ -5,6 +5,7 @@ const input = (state = {
   tags: '',
   name: ''
 }, action) => {
+  console.log(action);
   switch (action.type){
     case 'UPDATE_INPUT':
       return Object.assign({}, state, {

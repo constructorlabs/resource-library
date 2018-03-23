@@ -9,7 +9,6 @@ export const updateInput = function(input, name){
 };
 
 export const submitBookmark = function(title, description, url, tags){
-  console.log('in actions ', title, description, url, tags);
   return{
     type: 'SUBMIT_BOOKMARK',
     title,

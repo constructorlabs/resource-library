@@ -8,7 +8,6 @@ const submitBookmark = (state = [], action) => {
         url: action.url,
         tags: action.tags
       });
-      console.log(outputState);
       return outputState;
     default:
       return state;

@@ -11,7 +11,6 @@ class Input extends React.Component{
           className='bookmark-input-form'
           onSubmit={(event) => {
             event.preventDefault();
-            console.log('props ', this.props);
             return this.props.submitBookmark(
               this.props.title,
               this.props.description,
