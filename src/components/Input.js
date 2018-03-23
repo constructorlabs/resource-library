@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class Input extends React.Component{
 
@@ -77,7 +79,15 @@ class Input extends React.Component{
       </div>
     );
   }
+}
 
+Input.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  url: PropTypes.string,
+  tags: PropTypes.string,
+  updateInput : PropTypes.func,
+  submitBookmark: PropTypes.func
 }
 
 export default Input;
